@@ -13,6 +13,7 @@ const cargarDatos = (select, array) =>{
 cargarDatos (propiedad, datosPropiedad)
 cargarDatos (ubicacion, datosUbicacion)
 
+
 const datosCompletos = ()=> {
     if (propiedad.value !== "..." && ubicacion.value !== "..." && parseInt(metros2.value) && metros2.value  >= 10 && metros2.value <= 600 ){
     return true
@@ -22,17 +23,15 @@ const datosCompletos = ()=> {
 }
 
 
-const realizarCotizacion = () => {
-    if (datosCompletos ()){
-        const seguro = new Cotizador(metros2.value, propiedad.value, ubicacion.value, costoM2)
+const cotizador = ()=> {
+    const seguro = new Cotizador(metros2.value, propiedad.value, ubicacion.value, costoM2)
         importe.innerText = seguro.cotizar()
-        btnEnviar.classList.remove("ocultar")
-
-    } else {
-        alert("Completa los datos solicitados")
-    }
+        
 }
 
+const realizarCotizacion = () => {
+     datosCompletos () ? cotizador() : alert("Completa los datos solicitados")
+}   
 
 
 const enviarMail = () => {
