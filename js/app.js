@@ -44,10 +44,18 @@ const enviarMail = () => {
     }
 
     localStorage.setItem("Ultima cotizacion", JSON.stringify(cotizacion))
-    alert("Cotizacion enviada. Muchas gracias por elegirnos!")
-    btnEnviar.classList.add("ocultar")
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Enviamos su cotizacion por mail, muchas gracias por elegirnos!',
+        showConfirmButton: false,
+        timer: 3500
+      })
+    
 }
 
 
 btnCotizar.addEventListener("click", realizarCotizacion)
 btnEnviar.addEventListener("click", enviarMail)
+
+
