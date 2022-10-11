@@ -1,0 +1,17 @@
+[
+    {
+    "tipo": "CABA",
+    "factor": "1.5" 
+},
+
+{
+    "tipo": "Berazategui",
+    "factor": "1.3"
+},
+
+{
+    "tipo" : "Quilmes",
+    "factor" : "1.2" 
+}   
+
+]

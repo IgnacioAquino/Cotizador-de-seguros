@@ -1,6 +1,6 @@
 // FUNCION CARGA DE DATOS
 
-const cargarDatos = (select, array) =>{
+/*const cargarDatos = (select, array) =>{
     if(array.length > 0){
         array.forEach(element => {
             select.innerHTML += `<option value="${element.factor}">${element.tipo}</option>`
@@ -11,7 +11,31 @@ const cargarDatos = (select, array) =>{
 }
 
 cargarDatos (propiedad, datosPropiedad)
-cargarDatos (ubicacion, datosUbicacion)
+cargarDatos (ubicacion, datosUbicacion)*/
+
+function cargarDatos(select){
+    fetch("js/basepr.json")
+    .then(respuesta => respuesta.json())
+    .then(array => 
+        array.forEach(element => {
+            select.innerHTML += `<option value="${element.factor}">${element.tipo}</option>`
+        }))
+    }
+    cargarDatos (propiedad)
+
+    function cargarDatosB(select){
+        fetch("js/baseub.json")
+        .then(respuesta => respuesta.json())
+        .then(array => 
+            array.forEach(element => {
+                select.innerHTML += `<option value="${element.factor}">${element.tipo}</option>`
+            }))
+        }
+
+cargarDatosB (ubicacion)
+
+
+
 
 
 const datosCompletos = ()=> {

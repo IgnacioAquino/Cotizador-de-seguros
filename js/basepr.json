@@ -1,0 +1,17 @@
+
+[
+    {
+        "tipo": "Casa",
+        "factor": "1.5" 
+    },
+    {
+        "tipo": "Departamento",
+        "factor": "1.3"
+    },
+    {
+        "tipo" : "P.H",
+        "factor" : "1.2" 
+    }       
+    
+    
+]     

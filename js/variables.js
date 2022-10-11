@@ -1,4 +1,4 @@
-// BASE DE DATOS FICTISIA
+ /*/BASE DE DATOS FICTISIA
 
 const datosPropiedad = [{tipo: "Casa", factor: "1.5"},
                         {tipo: "Departamento", factor: "1.3"},
@@ -8,7 +8,7 @@ const datosPropiedad = [{tipo: "Casa", factor: "1.5"},
 
 const datosUbicacion = [{tipo: "CABA", factor: "1.5"},
                         {tipo: "Berazategui", factor: "1.2"},
-                        {tipo: "Quilmes", factor: "1.3"},]
+                        {tipo: "Quilmes", factor: "1.3"},]*/
 
 const costoM2 = 25     
 
